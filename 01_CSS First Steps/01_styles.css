@@ -1,0 +1,47 @@
+/* Styling and HTML using selector */
+h1 {
+  color: red;
+}
+
+/* Changing default properties */
+li {
+  list-style-type: square;
+}
+
+/* Styling using Class */
+.special {
+  color: orange;
+  font-weight: bold;
+}
+
+/* Selector and Class combination */
+li.special {
+  color: green;
+}
+
+/* descendant combinator */
+li em {
+  color: rebeccapurple;
+}
+
+/* adjacent sibling combinator */
+h1 + p {
+  font-size: 200%;
+}
+
+/* Styling based on state */
+a:link {
+  color: rgb(158, 60, 76);
+}
+
+a:visited {
+  color: blue;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  color: green;
+}
