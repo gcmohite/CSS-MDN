@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <style>
+      h1 {
+        color: red;
+      }
+      h1 {
+        color: blue;
+      }
+
+      body {
+        color: blue;
+      }
+
+      span {
+        color: rgb(54, 51, 51);
+      }
+
+      .main {
+        color: rebeccapurple;
+        border: 2px solid #ccc;
+        padding: 1em;
+      }
+
+      .special {
+        color: black;
+        font-weight: bold;
+      }
+
+      .foo {
+        color: blue;
+      }
+      .bar {
+        color: green;
+      }
+
+      p {
+        color: red;
+      }
+      .bar p {
+        color: unset;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is my heading</h1>
+
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam quibusdam
+      at provident ut, aut doloribus enim eligendi error harum deleniti.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident eum
+      quibusdam autem amet officiis molestiae. Voluptates autem molestias
+      mollitia reiciendis.<span>exception</span>
+    </p>
+
+    <ul class="main">
+      <li>Item One</li>
+      <li>
+        Item Two
+        <ul>
+          <li>2.1</li>
+          <li>2.2</li>
+        </ul>
+      </li>
+      <li>
+        Item Three
+        <ul class="special">
+          <li>
+            3.1
+            <ul>
+              <li>3.1.1</li>
+              <li>3.1.2</li>
+            </ul>
+          </li>
+          <li>3.2</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Controlling Inheritance -->
+    <p>This text is red.</p>
+    <div class="foo">
+      <p>This text is also red.</p>
+    </div>
+    <div class="bar">
+      <p>This text is green (default inherited value).</p>
+    </div>
+  </body>
+</html>
