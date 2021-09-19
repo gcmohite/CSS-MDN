@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors</title>
+    <link rel="stylesheet" href="02_selectors.css" />
+  </head>
+  <body>
+    <!-- Element Selector -->
+    <h1 id="title">Selectors</h1>
+    <br /><br />
+    <!-- Class Selectors -->
+    <h1 class="highlight">Class selectors</h1>
+    <p>
+      Veggies es bonus vobis, proinde vos postulo essum magis
+      <span class="highlight">kohlrabi welsh onion</span> daikon amaranth tatsoi
+      tomatillo melon azuki bean garlic.
+    </p>
+    <p class="highlight">
+      Gumbo beet greens corn soko <strong>endive</strong> gumbo gourd. Parsley
+      shallot courgette tatsoi pea sprouts fava bean collard greens dandelion
+      okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+    </p>
+    <br /><br />
+    <!-- Targetting elements with more than one class -->
+    <div class="notebox">This is an informational note.</div>
+    <div class="notebox warning">This note shows a warning.</div>
+    <div class="notebox danger">This note shows danger!</div>
+    <div class="danger">
+      This won't get styled — it also needs to have the notebox class
+    </div>
+    <br /><br />
+    <!-- ID Selectors -->
+    <h1 id="heading">ID selectors</h1>
+    <p>
+      Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh
+      onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.
+    </p>
+    <p id="one">
+      Gumbo beet greens corn soko <strong>endive</strong> gumbo gourd. Parsley
+      shallot courgette tatsoi pea sprouts fava bean collard greens dandelion
+      okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+    </p>
+    <br /><br />
+    <!-- Attribute Selectors -->
+    <!-- Presence and value selectors -->
+    <h2 id="attr">Attribute presence and value selectors</h2>
+    <ul>
+      <li>Item 1</li>
+      <li class="a">Item 2</li>
+      <li class="a b">Item 3</li>
+      <li class="ab">Item 4</li>
+    </ul>
+    <br />
+    <!-- Substring matching selectors -->
+    <h2 id="substr">Attribute substring matching selectors</h2>
+    <ul>
+      <li class="x">Item 1</li>
+      <li class="xy">Item 2</li>
+      <li class="yzx">Item 3</li>
+      <li class="yzxyz">Item 4</li>
+    </ul>
+    <br /><br />
+    <!-- Pseudo-class and pseudo-element selectors -->
+    <h1>Pseudo-class and pseudo-elements</h1>
+    <article>
+      <p>
+        Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh
+        onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.
+      </p>
+      <p>
+        Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot
+        courgette tatsoi pea sprouts fava bean collard greens dandelion okra
+        wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+      </p>
+    </article>
+    <br /><br />
+    <!-- ::before and ::after -->
+    <h2>::before and ::after</h2>
+    <p class="box">Content in the box in my HTML page.</p>
+
+    <div class="box2"></div>
+
+    <br /><br />
+
+    <!-- Combinators -->
+    <h1>Combinators</h1>
+
+    <!-- Descendant combinator -->
+    <h2>Descendant combinator</h2>
+    <div class="box3"><p>Text in .box3</p></div>
+    <p>Text not in .box3</p>
+
+    <!-- Child combinator -->
+    <h2 id="child">Child combinator</h2>
+    <ul>
+      <li>Unordered item</li>
+      <li>
+        Unordered item
+        <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+        </ol>
+      </li>
+    </ul>
+
+    <!-- Adjacent sibling combinator -->
+    <h2 id="adjacent">Adjacent sibling combinator</h2>
+    <p>
+      Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh
+      onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.
+    </p>
+
+    <p>
+      Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette
+      tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.
+      Dandelion cucumber earthnut pea peanut soko zucchini.
+    </p>
+
+    <!-- General sibling combinator -->
+    <h2 id="general">General sibling combinator</h2>
+    <p>I am a paragraph.</p>
+    <div>I am a div</div>
+    <p>I am another paragraph.</p>
+  </body>
+</html>

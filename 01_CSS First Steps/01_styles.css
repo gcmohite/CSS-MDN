@@ -18,6 +18,7 @@ li {
 li.special {
   color: green;
 }
+/* Note that "Item two" is green because li.special is more specific than .special as a selector */
 
 /* descendant combinator */
 li em {
@@ -44,4 +45,8 @@ a:hover {
 
 a:active {
   color: green;
+}
+
+h1 + ul + p {
+  color: goldenrod;
 }
