@@ -1,0 +1,150 @@
+/* Element selectors */
+h1#title {
+  font-size: 50px;
+}
+
+h1 {
+  color: blue;
+  margin: auto;
+  text-align: center;
+  font-size: 40px;
+}
+
+h2 {
+  padding: 10px 0px 5px 0px;
+}
+
+/* Universal selector */
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Class Selectors */
+.highlight {
+  background-color: yellow;
+}
+
+h1.highlight {
+  text-align: left;
+  background-color: pink;
+}
+
+/* Targetting elements with more than one class */
+.notebox {
+  border: 4px solid #666;
+  padding: 0.5em;
+}
+
+.notebox.warning {
+  border-color: orange;
+  font-weight: bold;
+}
+
+.notebox.danger {
+  border-color: red;
+  font-weight: bold;
+}
+
+/* ID Selectors */
+#one {
+  background-color: yellow;
+}
+
+h1#heading {
+  text-align: center;
+  color: rebeccapurple;
+}
+
+/* Attribute Selectors */
+h2#attr + ul li[class] {
+  font-size: 200%;
+} /* match any list item with a class attribute */
+h2#attr + ul li[class='a'] {
+  background-color: yellow;
+} /* matches a selector with a class of 'a', but not a selector with a class of 'a' with another space-separated class as part of the value. */
+
+h2#attr + ul li[class~='a'] {
+  color: red;
+} /* will match a class of 'a' but also a value that contains the class of 'a' as part of a whitespace-separated list */
+
+/* Substring matching selectors */
+h2#substr + ul li[class^='x'] {
+  font-size: 200%;
+}
+
+h2#substr + ul li[class$='x'] {
+  background-color: yellow;
+}
+
+h2#substr + ul li[class*='x'] {
+  color: red;
+}
+
+/* Pseudo-class selectors */
+article :first-child {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+/* Pseudo-element selectors */
+article p::first-line {
+  font-style: italic;
+  color: red;
+}
+
+/* Combining pseudo-class and pseudo-element */
+article p:first-child::first-line {
+  text-decoration-line: underline;
+}
+
+/* ::before and ::after  */
+.box::before {
+  content: 'This should show before the other content.';
+}
+
+.box::after {
+  content: '➥';
+}
+
+/* pseudo-elements are also frequently used to insert an empty string, which can then be styled just like any element on the page */
+.box2::before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: rebeccapurple;
+  border: 1px solid black;
+}
+
+/* Combinators */
+
+/* Descendant Combinator */
+.box3 p {
+  color: red;
+}
+
+/* Child combinator */
+#child + ul > li {
+  text-decoration-line: underline;
+}
+
+#child + ul > li > ol {
+  color: green;
+}
+
+/* Adjacent sibling combinator */
+#adjacent + p {
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5em;
+}
+
+/* General sibling combinator */
+#general ~ p {
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5em;
+}

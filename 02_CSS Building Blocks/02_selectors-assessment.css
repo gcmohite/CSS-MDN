@@ -1,0 +1,99 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Exercise 1 */
+.container1 h1 {
+  color: blue;
+}
+
+.container1 h2 {
+  background-color: blue;
+  color: white;
+}
+
+.container1 span {
+  font-size: 200%;
+}
+
+/* Exercise 2 */
+.container2 #special {
+  background-color: yellow;
+}
+
+.container2 .alert {
+  border: 1px solid grey;
+}
+
+.container2 span[class~='stop'] {
+  background-color: red;
+}
+.container2 span[class~='go'] {
+  background-color: green;
+}
+
+/* Exercise 3 */
+.container3 a {
+  color: orange;
+}
+
+.container3 a:visited {
+  color: green;
+}
+
+.container3 a:hover {
+  text-decoration: none;
+}
+.container3 p:first-child {
+  font-size: 150%;
+}
+
+.container3 p:first-child::first-line {
+  color: red;
+}
+
+.container3 table tr:nth-of-type(2n) {
+  background-color: #333;
+  color: white;
+}
+
+/* Exercise 4 */
+.container4 h2 + p {
+  color: red;
+}
+
+.container4 li {
+  list-style-type: none;
+}
+
+.container4 .list > li {
+  border-bottom: 1px grey solid;
+}
+
+/* Exercise 5 */
+
+.container5 ul li {
+  margin: 20px;
+  list-style-type: none;
+}
+
+.container5 a {
+  border: 5px solid grey;
+}
+
+.container5 a[title] {
+  border-color: pink;
+}
+
+.container5 a[href*='contact'] {
+  border-color: orange;
+}
+
+.container5 a[href^='https'] {
+  border-color: green;
+}
