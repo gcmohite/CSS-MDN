@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Task 1 */
+.container1 .box {
+  border: 5px solid rebeccapurple;
+  background-color: lightgray;
+  padding: 40px;
+  margin: 40px;
+  width: 300px;
+  height: 150px;
+}
+
+.container1 .alternate {
+  box-sizing: border-box;
+  width: 390px;
+}
+
+/* Task 2 */
+.container2 .box {
+  border: 5px dotted;
+  margin-top: 20px;
+  margin-right: 1em;
+  margin-bottom: 40px;
+  margin-left: 2em;
+  padding: 1em;
+}
+/* Task 3 */
+.container3 .box span {
+  background-color: pink;
+  border: 5px solid black;
+  padding: 1em;
+  display: inline-block;
+}

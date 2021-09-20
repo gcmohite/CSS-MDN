@@ -1,0 +1,173 @@
+/* setting default margin set by browser to 0 */
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+/* Display Types */
+.container1 p,
+.container1 ul {
+  border: 2px solid rebeccapurple;
+}
+
+.container1 li,
+.container1 .block {
+  border: 2px solid blue;
+  padding: 0.5em;
+}
+
+.container1 ul {
+  display: flex;
+  list-style: none;
+}
+
+.container1 .block {
+  display: block;
+}
+
+.container2 p,
+.container2 ul {
+  border: 2px solid rebeccapurple;
+  padding: 0.5em;
+}
+
+.container2 span,
+.container2 li {
+  border: 2px solid blue;
+}
+
+.container2 ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+.container2 .inline {
+  display: inline;
+}
+
+/* Box models */
+.box {
+  border: 5px solid rebeccapurple;
+  background-color: lightgray;
+  padding: 40px;
+  margin: 40px;
+  width: 300px;
+  height: 150px;
+}
+
+.alternate,
+.adjusted {
+  box-sizing: border-box;
+}
+
+.adjusted {
+  width: 390px;
+  height: 250px;
+}
+
+/* Margins */
+.container3 .box {
+  margin-top: 40px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  margin-left: 4em;
+}
+
+/* Margin collapsing */
+
+.container4 {
+  border: 5px solid blue;
+  padding: 10px 0;
+}
+
+/* see collapsing by changing margins for both .one and .two */
+.one {
+  border: 5px solid rebeccapurple;
+  background-color: lightgray;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.two {
+  border: 5px solid rebeccapurple;
+  background-color: lightgray;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+/* Borders */
+.container5 .container {
+  border-top: 5px dotted green;
+  border-right: 1px solid black;
+  border-bottom: 20px double rgb(23, 45, 145);
+}
+
+.container5 .box {
+  border: 1px solid #333333;
+  border-top-style: dotted;
+  border-right-width: 20px;
+  border-bottom-color: hotpink;
+}
+
+/* Padding */
+.container6 .box {
+  padding-top: 40px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  padding-left: 4em;
+}
+
+.container6 .container {
+  border: 5px solid blue;
+  padding: 30px;
+}
+
+/* Inline boxes */
+
+.container7 p {
+  border: 2px solid rebeccapurple;
+}
+.container7 span {
+  margin: 20px;
+  padding: 20px;
+  width: 80px;
+  height: 50px;
+  background-color: lightblue;
+  border: 2px solid blue;
+}
+
+/* Using display: inline-block */
+.container8 li {
+  display: inline;
+}
+
+.container8 ul {
+  border: 2px solid;
+}
+.container8 nav {
+  padding: 5px;
+  border: 2px solid;
+}
+
+.container8 .links-list a {
+  background-color: rgb(179, 57, 81);
+  color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  display: inline-block; /* this makes the padding getting applied vertically too */
+}
+
+.container8 .links-list a:hover {
+  background-color: rgb(66, 28, 40);
+  color: #fff;
+}
