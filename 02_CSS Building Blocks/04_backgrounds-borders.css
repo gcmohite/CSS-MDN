@@ -1,0 +1,210 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* body {
+  background: url(/images/star.png) repeat;
+  background-attachment: local;
+} */
+
+h1,
+.heading {
+  margin-top: 40px;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 60px;
+  background-color: grey;
+}
+
+.box {
+  height: 200px;
+  width: 350px;
+  border: 1px solid;
+  margin: 1px;
+}
+
+/* Background Colors */
+
+.container1 .box {
+  background-color: #567895;
+}
+
+.container1 h2 {
+  background-color: red;
+  color: white;
+}
+
+.container1 span {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Background Images */
+.a {
+  background-image: url(/images/balloons.jpg);
+}
+
+.b {
+  background-image: url(/images/star.png);
+  background-attachment: fixed;
+}
+
+/* Background image with background color */
+.c {
+  background-image: url(/images/star.png);
+  background-color: red;
+}
+
+/* Background reapeat */
+.d {
+  background-image: url(/images/star.png);
+  background-repeat: no-repeat;
+  /* other values can be repeat-x, repeat-y, repeat(the default) */
+}
+
+/* Background image sizing */
+
+.container2 {
+  display: flex;
+}
+.container2 .box1 {
+  background-image: url(/images/balloons.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container2 .box2 {
+  background-image: url(/images/balloons.jpg);
+  background-repeat: no-repeat;
+  background-size: 200px 10em;
+}
+
+.container2 .box3 {
+  background-image: url(/images/balloons.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Background Image Positioning */
+
+.container3 {
+  display: flex;
+} /*just so that the boxes fit on one line*/
+
+.container3 .box1 {
+  background-image: url(/images/star.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.container3 .box2 {
+  background-image: url(/images/star.png);
+  background-repeat: no-repeat;
+  background-position: 20px 10%;
+}
+
+.container3 .box3 {
+  background-image: url(/images/star.png);
+  background-repeat: no-repeat;
+  background-position: 20px top;
+}
+
+.container3 .box4 {
+  background-image: url(/images/star.png);
+  background-repeat: no-repeat;
+  background-position: top 30px right 10px;
+}
+
+/* Gradient background*/
+.grad {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(29, 253, 184, 1) 100%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+/* Multiple background images */
+/* .box.container4 {
+  background: url(/images/balloons.jpg) center, url(/images/star.png),
+    linear-gradient(
+      90deg,
+      rgba(131, 58, 180, 1) 0%,
+      rgba(29, 253, 184, 1) 100%,
+      rgba(252, 176, 69, 1) 100%
+    );
+  background-repeat: no-repeat, repeat, no-repeat;
+  background-size: 200px, auto, auto;
+} */
+
+/* something equivalent */
+.box.container4 {
+  background: no-repeat url(/images/balloons.jpg) center / 200px,
+    repeat url(/images/star.png),
+    linear-gradient(
+      90deg,
+      rgba(131, 58, 180, 1) 0%,
+      rgba(29, 253, 184, 1) 100%,
+      rgba(252, 176, 69, 1) 100%
+    );
+  /* background-size: 200px, auto, auto; */
+}
+
+/* Background Attachment */
+.container5 {
+  display: flex;
+}
+
+.container5 .box1 {
+  background: url(/images/star.png) repeat;
+  background-attachment: scroll;
+}
+
+.container5 .box2 {
+  background: url(/images/star.png) repeat;
+  background-attachment: fixed;
+}
+.container5 .box3 {
+  background: url(/images/star.png) repeat;
+  background-attachment: local;
+}
+
+/* Borders */
+.borders {
+  text-align: center;
+  background-color: #567895;
+  border: 5px solid #0b385f;
+  border-bottom-style: dashed;
+  color: #fff;
+}
+
+.borders h2 {
+  border-top: 2px dotted rebeccapurple;
+  border-bottom: 1em double rgb(24, 163, 78);
+}
+
+/* Border-radius */
+
+.radius {
+  display: flex;
+  text-align: center;
+}
+
+.radius .box1 {
+  border: 10px solid rebeccapurple;
+  border-radius: 10px;
+}
+
+.radius .box2 {
+  border: 10px solid rebeccapurple;
+  border-radius: 1em;
+  border-radius: 10px 100px / 40px 120px;
+}
+
+.radius .box3 {
+  border: 10px solid rebeccapurple;
+  border-radius: 1em;
+  border-radius: 50% 20% / 10% 40%;
+}
