@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflowing Content</title>
+    <link rel="stylesheet" href="/06_Content-Overflow.css" />
+  </head>
+  <body>
+    <h1>Content Overflow</h1>
+    <div class="container1">
+      <div class="box">
+        This box has a height and a width. This means that if there is too much
+        content to be displayed within the assigned height, there will be an
+        overflow situation. If overflow is set to hidden then any overflow will
+        not be visible.
+      </div>
+
+      <p>This content is outside of the box.</p>
+
+      <br /><br />
+
+      <div class="word">Overflow</div>
+    </div>
+
+    <h1>Using the overflow property</h1>
+    <h2>overflow: hidden</h2>
+    <div class="container2">
+      <div class="box box1">
+        This box has a height and a width. This means that if there is too much
+        content to be displayed within the assigned height, there will be an
+        overflow situation. If overflow is set to hidden then any overflow will
+        not be visible.
+      </div>
+
+      <p>This content is outside of the box.</p>
+    </div>
+
+    <h2>overflow: scroll</h2>
+    <div class="container2">
+      <div class="box box2">
+        This box has a height and a width. This means that if there is too much
+        content to be displayed within the assigned height, there will be an
+        overflow situation. If overflow is set to hidden then any overflow will
+        not be visible.
+      </div>
+      <p>This content is outside of the box.</p>
+    </div>
+
+    <h2>overflow-y: scroll</h2>
+    <div class="container2">
+      <div class="box box3">
+        This box has a height and a width. This means that if there is too much
+        content to be displayed within the assigned height, there will be an
+        overflow situation. If overflow is set to hidden then any overflow will
+        not be visible.
+      </div>
+      <p>This content is outside of the box.</p>
+    </div>
+
+    <h2>overflow-x: scroll</h2>
+    <div class="container2">
+      <div class="word">Overflow</div>
+    </div>
+
+    <h2>overflow: auto</h2>
+    <p style="font-weight: bold">
+      scrollbars appear only when there is more content than can fit in the box
+    </p>
+    <div class="container3">
+      <div class="box box1">
+        This box has a height and a width. This means that if there is too much
+        content to be displayed within the assigned height, there will be an
+        overflow situation. If overflow is set to hidden then any overflow will
+        not be visible.
+      </div>
+
+      <div class="box box2">
+        This box has a height and a width. This means that if there is too much
+        content to be displayed within the assigned height, there will be an
+        overflow situation. If overflow is set to hidden then any overflow will
+        not be visible.
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+  border: 5px solid black;
+  padding: 1em;
+  height: 200px;
+  width: 300px;
+  overflow-y: scroll;
+}
+
+.flower {
+  border: 5px solid black;
+  height: 200px;
+  width: 300px;
+  overflow: hidden;
+}
