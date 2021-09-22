@@ -1,0 +1,136 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+  background-color: aquamarine;
+  border: 2px solid;
+  margin: 2px;
+  width: 150px;
+}
+
+.horizontal {
+  writing-mode: horizontal-tb;
+}
+
+.vertical {
+  writing-mode: vertical-rl;
+}
+
+.wrapper {
+  writing-mode: vertical-rl;
+}
+
+/* The .wrapper is set to vertical-rl so each of its child divs should flow from top to bottom and the lines in each div should be from right to left. But since each div here is given its own writing-mode, they will individualy behave accordingly.  */
+
+/* Logical properties and values */
+
+/* Logical heights and widths */
+.container1 {
+  writing-mode: vertical-lr;
+}
+
+.container1 .box {
+  width: 100px;
+  margin: 30px;
+  margin-top: 0;
+}
+
+.container1 .horizontal {
+  writing-mode: horizontal-tb;
+}
+
+.container1 .vertical {
+  writing-mode: vertical-rl;
+}
+
+/* when the box is in the vertical writing mode, it still has a width, and this is causing the text to overflow. */
+
+/* What we really want in this scenario is to essentially swap height with width in accordance to the writing mode. When we're in a vertical writing mode we want the box to expand in the block dimension just like it does in the horizontal mode. */
+
+.container2 {
+  writing-mode: vertical-lr;
+}
+.container2 .box {
+  /* The property mapped to width when in a horizontal writing mode is called inline-size — it refers to the size in the inline dimension. The property for height is named block-size and is the size in the block dimension. */
+  inline-size: 150px;
+  block-size: auto;
+  margin: 30px;
+  margin-top: 0;
+}
+
+.container2 .horizontal {
+  writing-mode: horizontal-tb;
+}
+
+.container2 .vertical {
+  writing-mode: vertical-rl;
+}
+
+/* Logical margins, borders and paddings */
+/* For physical properties like margin-top, border-bottom etc there are logical mappings too In the same way that we have mappings for width and height as seen above.*/
+/* margin-top property is mapped to margin-block-start — this will always refer to the margin at the start of the block dimension. The padding-left property maps to padding-inline-start, the padding that is applied to the start of the inline direction. This will be where sentences start in that writing mode. and so on*/
+
+.container3 {
+  display: flex;
+}
+
+.container3 .logical {
+  margin-block-start: 20px;
+  padding-inline-end: 2em;
+  padding-block-start: 2px;
+  border-block-start: 5px solid pink;
+  border-inline-end: 10px dotted rebeccapurple;
+  border-block-end: 1em double orange;
+  border-inline-start: 1px solid black;
+}
+
+.container3 .physical {
+  margin-top: 20px;
+  padding-right: 2em;
+  padding-top: 2px;
+  border-top: 5px solid pink;
+  border-right: 10px dotted rebeccapurple;
+  border-bottom: 1em double orange;
+  border-left: 1px solid black;
+}
+
+.container3 h2 {
+  border-bottom: 5px solid black;
+}
+
+/* switching writing-mode to see difference in phycial and logical values */
+
+.container4 {
+  writing-mode: vertical-rl;
+}
+
+.container4 .box {
+  inline-size: 200px;
+}
+
+.container4 .logical {
+  margin-block-start: 20px;
+  padding-inline-end: 2em;
+  padding-block-start: 2px;
+  border-block-start: 5px solid pink;
+  border-inline-end: 10px dotted rebeccapurple;
+  border-block-end: 1em double orange;
+  border-inline-start: 1px solid black;
+}
+
+.container4 .physical {
+  margin-top: 20px;
+  padding-right: 2em;
+  padding-top: 2px;
+  border-top: 5px solid pink;
+  border-right: 10px dotted rebeccapurple;
+  border-bottom: 1em double orange;
+  border-left: 1px solid black;
+}
+
+/* the bottom border of the heading is corrected to go below the heading always */
+.container4 h2 {
+  /* border-bottom: 5px solid black; */
+  border-block-end: 5px solid black;
+}

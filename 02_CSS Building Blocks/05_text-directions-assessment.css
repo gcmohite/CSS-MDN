@@ -1,0 +1,55 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Task 1 */
+.container1 .box {
+  border: 5px solid rebeccapurple;
+  background-color: lightgray;
+  padding: 40px;
+  margin: 40px;
+}
+
+.container1 {
+  writing-mode: vertical-lr;
+}
+
+.container1 .box1 {
+  writing-mode: horizontal-tb;
+}
+
+.container1 .box2 {
+  writing-mode: vertical-rl;
+}
+
+/* Task 2 */
+
+.container2 .box {
+  border: 5px solid rebeccapurple;
+  background-color: lightgray;
+  padding: 40px;
+  margin: 40px;
+  inline-size: 200px;
+  block-size: 100px;
+}
+
+.container2 .vertical {
+  writing-mode: vertical-rl;
+}
+
+/* Task 3*/
+
+.container3 .box {
+  width: 150px;
+  height: 150px;
+  border-block-start: 5px solid rebeccapurple;
+  border-inline-end: 5px solid grey;
+  border-block-end: 5px dotted red;
+  border-inline-start: 5px dotted blue;
+  padding-block-start: 40px;
+  margin-block-end: 30px;
+}
+
+.container3 .vertical {
+  writing-mode: vertical-rl;
+}

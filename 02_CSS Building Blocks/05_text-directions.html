@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Directions</title>
+    <link rel="stylesheet" href="/05_text-directions.css" />
+  </head>
+  <body>
+    <!-- <h1>
+      Play with writing modes. <br />
+      More text. &nbsp;
+    </h1> -->
+
+    <div class="wrapper">
+      <div class="box horizontal">
+        <h2>Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis,
+          obcaecati.
+        </p>
+      </div>
+      <div class="box vertical">
+        <h2>Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem,
+          id!
+        </p>
+      </div>
+      <div class="box vertical">
+        <h2>Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam,
+          autem.
+        </p>
+      </div>
+    </div>
+
+    <!-- Logical properties and values -->
+    <h1>Logical properties and values</h1>
+    <h2>Logical heights and widths</h2>
+    <h3>
+      content overflowing because the width is set and not in sync with writing
+      mode
+    </h3>
+    <div class="container1">
+      <div class="box horizontal">
+        <h2>Heading</h2>
+        <p>A paragraph. Demonstrating Writing Modes in CSS.</p>
+        <p>These boxes have a width.</p>
+      </div>
+      <div class="box vertical">
+        <h2>Heading</h2>
+        <p>A paragraph. Demonstrating Writing Modes in CSS.</p>
+        <p>These boxes have a width.</p>
+      </div>
+    </div>
+
+    <h3>content not overflowing because width in sync with writing mode</h3>
+    <div class="container2">
+      <div class="box horizontal">
+        <h2>Heading</h2>
+        <p>A paragraph. Demonstrating Writing Modes in CSS.</p>
+        <p>These boxes have a width.</p>
+      </div>
+      <div class="box vertical">
+        <h2>Heading</h2>
+        <p>A paragraph. Demonstrating Writing Modes in CSS.</p>
+        <p>These boxes have a width.</p>
+      </div>
+    </div>
+
+    <h2>Logical margins, borders and paddings</h2>
+    <h3>physical values and their equivalent logical values</h3>
+    <div class="container3">
+      <div class="box physical">
+        <h2>Physical Properties</h2>
+        <p>A paragraph. Demonstrating Logical Properties in CSS.</p>
+      </div>
+      <div class="box logical">
+        <h2>Logical Properties</h2>
+        <p>A paragraph. Demonstrating Logical Properties in CSS.</p>
+      </div>
+    </div>
+
+    <h3>
+      when writing-mode is changed, physical properties stay tied to their
+      physical direction, whereas the logical properties switch with the writing
+      mode.
+    </h3>
+    <div class="container4">
+      <div class="box physical">
+        <h2>Physical Properties</h2>
+        <p>A paragraph. Demonstrating Logical Properties in CSS.</p>
+      </div>
+      <div class="box logical">
+        <h2>Logical Properties</h2>
+        <p>A paragraph. Demonstrating Logical Properties in CSS.</p>
+      </div>
+    </div>
+  </body>
+</html>
