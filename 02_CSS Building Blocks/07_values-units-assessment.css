@@ -1,0 +1,60 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.colors li {
+  list-style-type: none;
+  width: 80vw;
+  height: 30px;
+  margin: 5px;
+  padding: 10px;
+  height: fit-content;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.hex {
+  background-color: #86defa;
+}
+
+.RGB {
+  background-color: rgb(134, 222, 250);
+}
+
+.HSL {
+  background-color: hsl(194, 92%, 75%);
+}
+
+.alpha {
+  background-color: rgba(134, 222, 250, 0.2);
+}
+
+/* Task 2 */
+.container h1 {
+  text-align: initial;
+  font-size: 50px;
+}
+
+.container h2 {
+  font-size: 2em;
+}
+
+.container p {
+  font-size: 16px;
+}
+
+.container h1 + p {
+  font-size: 120%;
+}
+
+.box {
+  height: 200px;
+  width: 40vw;
+  border: 5px solid;
+  margin: auto;
+  background: no-repeat url(/images/star.png) center top 20% / 100px;
+}

@@ -1,0 +1,74 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-decoration-line: underline;
+}
+
+.box {
+  border: 5px solid darkblue;
+  background-color: lightblue;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.container1 .wrapper {
+  font-size: 1em;
+}
+
+.container1 .px {
+  width: 200px;
+}
+
+.container1 .vw {
+  width: 20vw;
+}
+
+.container1 .em {
+  width: 10em;
+}
+
+html {
+  font-size: 16px;
+}
+
+.ems li {
+  font-size: 1.3em;
+}
+
+.rems li {
+  font-size: 1.3rem;
+}
+
+.container2 .wrapper {
+  width: 300px;
+  border: 5px solid rebeccapurple;
+}
+
+.container2 .px {
+  width: 200px;
+}
+
+.container2 .percent {
+  width: 40%;
+}
+
+.container3 {
+  width: 70vw;
+  height: 200px;
+  border: 1px solid;
+  background: url(/images/balloons.jpg) left bottom;
+}
+
+.container3 .box {
+  width: 30%;
+  margin: auto;
+  margin-top: 70px;
+  text-align: center;
+  opacity: 0.7;
+}

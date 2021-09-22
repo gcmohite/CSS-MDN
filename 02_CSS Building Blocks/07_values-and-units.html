@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Values and Units</title>
+    <link rel="stylesheet" href="/07_values-and-units.css" />
+  </head>
+  <body>
+    <h1>CSS Values and Units</h1>
+
+    <h2>Absolute and Relative Lengths</h2>
+
+    <div class="container1">
+      <div class="wrapper">
+        <div class="box px">I am 200px wide</div>
+        <div class="box vw">I am 20vw wide</div>
+        <div class="box em">I am 10em wide</div>
+      </div>
+    </div>
+
+    <br /><br />
+
+    <h2>ems and rems</h2>
+    <div class="container2">
+      <ul class="ems">
+        <li>One</li>
+        <li>Two</li>
+        <li>
+          Three
+          <ul>
+            <li>Three A</li>
+            <li>
+              Three B
+              <ul>
+                <li>Three B 2</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="rems">
+        <li>One</li>
+        <li>Two</li>
+        <li>
+          Three
+          <ul>
+            <li>Three A</li>
+            <li>
+              Three B
+              <ul>
+                <li>Three B 2</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <h2>Percentages</h2>
+    <div class="container2">
+      <div class="box px">I am 200px wide</div>
+      <div class="box percent">I am 40% wide</div>
+      <div class="wrapper">
+        <div class="box px">I am 200px wide</div>
+        <div class="box percent">I am 40% wide</div>
+      </div>
+    </div>
+
+    <h2>Numbers</h2>
+    <div class="container3">
+      <div class="box">I am a box with opacity</div>
+    </div>
+  </body>
+</html>
