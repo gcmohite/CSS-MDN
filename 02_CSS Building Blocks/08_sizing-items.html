@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sizing Items</title>
+    <link rel="stylesheet" href="/08_sizing-items.css" />
+  </head>
+  <body>
+    <h1>Sizing Items</h1>
+    <h2>Percentage margins and padding</h2>
+    <div class="box">I have margin and padding set to 10% on all sides.</div>
+
+    <h2>min- and max- sizes</h2>
+    <h3>min-width</h3>
+
+    <div class="container1">
+      <div class="box1"></div>
+      <div class="box1">
+        These boxes both have a min-height set, this box has content in it which
+        will need more space than the assigned height, and so it grows from the
+        minimum.
+      </div>
+    </div>
+    <br />
+    <h3>max-width</h3>
+    <div class="container2">
+      <div class="box2">
+        <img src="/images/purple-star.png" alt="star" class="width" />
+      </div>
+      <div class="box2">
+        <img src="/images/purple-star.png" alt="star" class="max" />
+      </div>
+      <div class="minibox">
+        <img src="/images/purple-star.png" alt="star" class="max" />
+      </div>
+    </div>
+    <br />
+
+    <h2>Viewport units</h2>
+    <div class="viewport">A</div>
+  </body>
+</html>
