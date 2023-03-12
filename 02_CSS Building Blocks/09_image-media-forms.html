@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image, Media, Form Elements</title>
+    <link rel="stylesheet" href="/09_image-media-forms.css" />
+  </head>
+  <body>
+    <h1>Image, Media and Form Elements</h1>
+
+    <h2>Sizing Images</h2>
+
+    <h3>using max-width property</h3>
+    <div class="wrapper1">
+      <div class="box">
+        <img src="images/star.png" alt="star" />
+      </div>
+      <div class="box">
+        <img src="/images/balloons.jpg" alt="balloons" />
+      </div>
+    </div>
+
+    <h3>using object-fit property</h3>
+    <div class="wrapper2">
+      <div class="box">
+        <img
+          src="/images/balloons.jpg"
+          alt="star"
+          class="cover"
+          title="object-fit: cover"
+        />
+      </div>
+      <div class="box">
+        <img
+          src="/images/balloons.jpg"
+          alt="balloons"
+          class="contain"
+          title="object-fit: contain"
+        />
+      </div>
+      <div class="box">
+        <img
+          src="/images/balloons.jpg"
+          alt="balloons"
+          class="fill"
+          title="object-fit: fill"
+        />
+      </div>
+    </div>
+    <br />
+
+    <h2>Styling text input elements</h2>
+    <form>
+      <ul>
+        <li>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+        </li>
+        <li>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" />
+        </li>
+      </ul>
+
+      <div class="buttons">
+        <button type="submit" value="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

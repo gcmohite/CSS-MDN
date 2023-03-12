@@ -1,0 +1,60 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.box {
+  margin: auto;
+  width: 300px;
+  height: 150px;
+  border: 5px solid;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.myform {
+  margin: auto;
+  width: 60vw;
+  border: 2px solid #000;
+  padding: 5px;
+}
+
+.myform input[type='search'],
+.myform input[type='submit'] {
+  font-size: inherit;
+  padding: 10px;
+}
+
+input[type='submit'] {
+  background-color: rebeccapurple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+label {
+  display: inline-block;
+  font-size: 1.2em;
+}

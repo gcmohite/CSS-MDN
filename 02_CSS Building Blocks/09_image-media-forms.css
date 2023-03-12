@@ -1,0 +1,115 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+.wrapper1,
+.wrapper2 {
+  text-align: center;
+}
+
+h2 {
+  text-decoration-line: underline;
+}
+
+h3 {
+  margin-bottom: 5px;
+}
+
+.wrapper1,
+.wrapper2 {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.wrapper1 .box {
+  border: 5px solid darkblue;
+  width: 200px;
+  display: inline-block;
+}
+
+.wrapper1 img {
+  width: 100%;
+}
+
+/* using object-fit property */
+.wrapper2 .box {
+  border: 5px solid darkblue;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+
+.wrapper2 img {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper2 .cover {
+  object-fit: cover;
+}
+
+.wrapper2 .contain {
+  object-fit: contain;
+}
+
+/* Styling text input */
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+form {
+  margin: 0 auto;
+  border: 1px solid;
+  padding: 10px;
+  width: 80vw;
+  height: auto;
+}
+
+input {
+  width: 65%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin: 0 0 1em 0;
+}
+
+input[type='text']:focus,
+input[type='email']:focus {
+  border: 3px solid green;
+}
+
+label {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+button {
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 10px 2em;
+  background-color: #999;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #333;
+}
