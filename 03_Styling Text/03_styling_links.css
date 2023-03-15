@@ -1,0 +1,61 @@
+a:link {
+  text-decoration: none;
+  background-color: wheat;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited,
+a:link {
+  color: green;
+}
+
+a:active {
+  color: turquoise;
+}
+
+a:focus {
+  outline: 1px solid;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  border: 1px solid red;
+}
+
+ul li {
+  /* border: 1px solid green; */
+  flex: 1;
+  text-align: center;
+  display: flex;
+}
+
+li a {
+  flex: 1;
+  padding: 20px 5px;
+}
+
+li a[href^="https://"]::after
+{
+  content: '';
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  padding-left: 5px;
+  background-image: url(/icons8-external-link.svg);
+  background-repeat: no-repeat;
+  background-position: right 30% top 45%;
+  background-size: 15px 15px;
+  background-color: wheat;
+}
+
+a:hover {
+  text-decoration: underline;
+  background-color: darkcyan;
+  color: white;
+}
