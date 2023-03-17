@@ -1,0 +1,153 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  width: 70vw;
+  background-color: royalblue;
+  /* border: 1px dotted black; */
+}
+
+.box p {
+  height: 100%;
+  padding: 10px;
+}
+
+.static {
+  position: static;
+}
+
+.relative {
+  position: relative;
+  top: 5vh;
+  left: 5vw;
+}
+
+.parent {
+  background-color: cadetblue;
+  padding: 10px;
+  width: 75vw;
+  height: 75vh;
+  position: relative;
+}
+
+.child {
+  /* height: 50px; */
+  width: 50px;
+  opacity: 0.5;
+  background-color: darkmagenta;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  bottom: 0;
+  /* right: 50%; */
+}
+
+.container1 {
+  position: relative;
+}
+
+.container1 p {
+  background-color: turquoise;
+  border: 1px solid navy;
+}
+
+.container1 p:nth-of-type(3) {
+  font-weight: bolder;
+  background-color: yellow;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  /* z-index: -1; */
+  padding: 50px 0;
+
+  opacity: 0.5;
+}
+
+.container2 {
+  padding: 1em;
+  border: 1px solid red;
+}
+
+.card {
+
+  --padding: 1rem
+  border: 1px solid black;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  padding: var(--padding);
+  border-inline-end: 1px solid;
+}
+
+.container2 img {
+  display: block;
+  width: 50px;
+  margin: 0 auto;
+  float: right;
+}
+
+.container2 img ~ * {
+  clear: both;
+}
+
+.name {
+  position: absolute;
+  top: var(--padding);
+  left: var(--padding);
+}
+
+.container3 {
+  border: 5px solid blueviolet;
+  height: 200vh;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(5, 1fr );
+  grid-template-rows: repeat(30, 1fr );
+  padding: 1rem;
+}
+
+.header {
+  grid-column: 1/5;
+  grid-row: 1/2;
+}
+
+.content {
+  grid-column: 1/5;
+  grid-row: 2/30;
+}
+
+.sidebar {
+
+  grid-row: 1/5;
+  padding: 1rem;
+  align-items: start;
+  position: sticky;
+  top: 1rem;
+  bottom: auto;
+  background-color: turquoise;
+  overflow: auto;
+}
+
+.container4 {
+  height: 400vh;
+}
+
+
+
+p a[href^=POSITIONING] {
+  position: fixed;
+  bottom: 0;
+  
+}
+
+
+
+
+
+
