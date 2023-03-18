@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: greenyellow; */
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (width > 50rem) /*(min-width: 50rem) */ {
+  body {
+    background-color: turquoise;
+  }
+}
+
+@media screen and (width < 30rem) /*(max-width: 30rem) */ {
+  body {
+    background-color: goldenrod;
+  }
+}
+
+@media screen and (30rem <= width <= 50rem) {
+  body {
+    background-color: lightgray;
+  }
+}
+
+@media screen and (min-width: 600px), screen and (orientation: landscape) {
+  body {
+    color: rebeccapurple;
+  }
+}
+
+/* disconnect the mouse in landscape mode and the lightgreen background will not take effect */
+@media (hover: hover) and (orientation: landscape) {
+  body {
+    background: lightgreen;
+  }
+}
+
+@media not screen and (orientation: landscape) {
+  body {
+    font-size: 4rem;
+  }
+}

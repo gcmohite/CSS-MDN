@@ -1,0 +1,43 @@
+body {
+  width: 90%;
+  max-width: 900px;
+  margin: 2em auto;
+  font: 0.9em/1.2 Arial, Helvetica, sans-serif;
+}
+
+.container {
+  border: 1px solid;
+  margin-bottom: 5rem;
+  padding: 1em;
+}
+
+.container1 p {
+  column-count: 3;
+  column-width: 100px;
+  column-gap: 5em;
+  column-rule: 5px dashed turquoise;
+}
+
+.container2 {
+  column-count: 3;
+  column-rule: 5px dashed teal;
+  column-gap: 5em;
+}
+
+.container2 h2 {
+  column-span: all;
+  border-radius: 5px;
+  background-color: rgba(00, 80, 80, 0.7);
+}
+
+.container3 {
+  column-count: 2;
+}
+
+.container3 .card {
+  break-inside: avoid;
+  background-color: rgb(207, 232, 220);
+  border: 2px solid rgb(79, 185, 227);
+  padding: 10px;
+  margin: 0 0 1em 0;
+}
